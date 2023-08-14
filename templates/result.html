@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Dorang landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Dorang | Free Bootstrap 4.3.x template</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="static/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + Dorang main styles -->
+	<link rel="stylesheet" href="static/css/dorang.css">
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
+
+    <!-- page navbar -->
+    <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+        <ul class="nav-navbar container">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Explore</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="static/imgs/placeholder.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page"></a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Journal</a></li>
+            <li class="nav-item search">
+                <a href="javascript:void(0)" class="nav-link search-toggle"><i class="ti-search"></i> Search</a>
+                <div class="search-wrapper">
+                    <form>
+                        <input type="search" class="form-control" name="" placeholder="hit enter to search">
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </nav><!-- end of page navbar -->
+
+    <div class="theme-selector">
+        <a href="javascript:void(0)" class="spinner">
+            <i class="ti-paint-bucket"></i>
+        </a>
+        <div class="body">
+            <a href="javascript:void(0)" class="light"></a>
+            <a href="javascript:void(0)" class="dark"></a>
+        </div>
+    </div>
+
+    <!-- page header -->
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1 class="header-title">What Happens Tomorrow?</h1>
+            <p class="header-subtitle">Project Based on Metro DataSet and model deployment as a web app using flask</p>
+
+            <button class="btn btn-theme-color modal-toggle"><i class="ti-control-play text-danger"></i> Watch Video</button>
+
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- modal -->
+    <div class="modalBox">
+        <div class="modalBox-body">
+            <iframe width="100%" height="450px" class="border-0"
+            src="https://www.youtube.com/embed/tgbNyZ7vqY?controls=0">
+            </iframe>
+        </div>
+    </div><!-- end of modal -->
+
+
+<h2>The Predicted Traffic Volume for the current hour is - {{res}}</h2>
+
+    <!-- page container -->
+    <div class="container page-container">
+        <form action="{{ url_for('result') }}" method="post">
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="temp">Temperature</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" class="form-control" id="temp" name="temp" placeholder="Temperature in Kelvin">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="rain">Rain</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" class="form-control" id="rain" name="rain" placeholder="Amount of rain in mm (in that hour)">
+
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="snow">Snow</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" class="form-control" id="snow" name="snow" placeholder="Amount of snow in mm that occurred in the hour">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="clouds">Clouds </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" class="form-control" id="clouds" name="clouds" placeholder="Percentage of cloud cover">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="weather_main">Weather main</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" class="form-control" id="weather_main" name="weather_main" placeholder="Short textual description of the current weather">
+
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="weather_description">Weather description</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" class="form-control" id="weather_description" name="weather_description" placeholder="Longer textual description of the current weather">
+
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="month">Month</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" class="form-control" id="month" name="month" placeholder="Current Month">
+                            </div>
+                        </div>
+                        <br>
+			<br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="time">Time</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" class="form-control" id="time" name="time" placeholder="Time (enter the hour)">
+                            </div>
+                        </div>
+                        <br>
+
+
+                        <br>
+                        <br>
+                        <center>
+                            <button type="submit" class="btn btn-dark" value="submit">Submit</button>
+                        </center>
+                </form>
+        <div class="col-md-10 col-lg-8 m-auto">
+            <h6 class="title mb-4">Explore Visualizations</h6>
+
+        </div>
+<div class='tableauPlaceholder' id='viz1691980273447' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Me&#47;Metrodata_16919044247310&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Metrodata_16919044247310&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Me&#47;Metrodata_16919044247310&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1691980273447');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1350px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1350px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <!-- row -->
+
+
+
+
+
+
+
+
+
+        <a href="static/sweetviz_report.html"> Data Statistics Report <i class="ti-angle-double-right angle"></i></a>
+
+<!--        <iframe src="static/sweetviz_report.html" height="200" width="300" title="Iframe Example"></iframe>-->
+
+    </div> <!-- end of page container -->
+
+    <!--footer & pre footer -->
+    <div class="contact-section">
+        <div class="overlay"></div>
+        <!-- container -->
+        <div class="container">
+            <div class="col-md-10 col-lg-8 m-auto">
+                <h6 class="title mb-2">Contact Us</h6>
+                <p class="mb-5">Feel Free To Drop Us A Line.</p>
+                <form action="" class="form-group">
+                    <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                    <input type="email" class="form-control" placeholder="Enter Email"requried>
+                    <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                    <input type="submit" value="Send Message" class="form-control">
+                </form>
+            </div>
+
+            <!-- footer -->
+            <footer class="footer">
+                <p class="infos">&copy; <script>document.write(new Date().getFullYear())</script>, Made with <i class="ti-heart text-danger"></i> by <a href="http://www.devcrud.com">DevCRUD</a></p>
+                <span>|</span>
+                <div class="links">
+                    <a href="#">About</a>
+                    <a href="#">Explore</a>
+                    <a href="#">Journal</a>
+                </div>
+            </footer><!-- end of footer -->
+
+        </div><!-- end of container -->
+    </div><!-- end of pre footer -->
+
+    <!-- core  -->
+    <script src="static/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="static/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="static/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Dorang js -->
+    <script src="static/js/dorang.js"></script>
+
+</body>
+<style>
+<!--body {-->
+<!--    background-color: #626269;-->
+<!--}-->
+
+.col-lg-4 {
+    color: #ffffff;
+}
+</style>
+</html>
